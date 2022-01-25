@@ -1,0 +1,17 @@
+
+
+$tb: 768px;
+$sm: 1210px;
+
+%cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+%contain {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
