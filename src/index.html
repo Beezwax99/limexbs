@@ -3,63 +3,103 @@ layout: default
 title: Главная
 ---
 <div class="div position-relative">
-    <div class="container pt-5 p-0 con-w position-relative">
-        <div class="col row m-0">
+    <div class="container pt-xl-5 pt-2 p-xl-0 con-w position-relative header">
+        <div class="col row-xl m-xl-0 d-flex justify-content-between align-items-center">
+            <div class="burger d-flex d-lg-none"><span></span></div>
             <a class="w-fit logo col-1 p-0 d-flex justify-content-start me-5" href="/">
                 <img src="assets/img/logoblack.png" alt="">
             </a>
-            <ul class="nav col-xl-5 col-xxl-7 p-0 d-flex align-items-center me-5">
+            <ul class="nav col-xl-5 col-xxl-7 p-0 d-lg-flex align-items-center me-5 d-none">
                 <li class="nav-item"><a class="nav-it" href="/">Main</a></li>
                 <li class="nav-item"><a class="nav-it" href="/">About</a></li>
                 <li class="nav-item"><a class="nav-it" href="/">MT5 Opportunities</a></li>
             </ul>
-            <a class="btn btn-border col" href="/">
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a class="btn btn-border col-xl d-flex align-items-center justify-content-center" href="/">
+                <svg class="d-none d-xl-block me-xl-3" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8.70833 0C6.98599 0 5.30232 0.510734 3.87024 1.46762C2.43817 2.4245 1.322 3.78456 0.662886 5.37579C0.00377321 6.96703 -0.168681 8.71799 0.167332 10.4072C0.503345 12.0965 1.33273 13.6482 2.55061 14.866C3.7685 16.0839 5.32017 16.9133 7.00942 17.2493C8.69867 17.5853 10.4496 17.4129 12.0409 16.7538C13.6321 16.0947 14.9922 14.9785 15.949 13.5464C16.9059 12.1143 17.4167 10.4307 17.4167 8.70833C17.4139 6.39957 16.4956 4.18616 14.863 2.55362C13.2305 0.92108 11.0171 0.0027237 8.70833 0V0ZM8.70833 15.8333C7.29914 15.8333 5.9216 15.4154 4.7499 14.6325C3.5782 13.8496 2.66497 12.7369 2.12569 11.4349C1.58642 10.133 1.44532 8.70042 1.72024 7.31831C1.99516 5.9362 2.67375 4.66664 3.6702 3.67019C4.66665 2.67375 5.9362 1.99516 7.31832 1.72024C8.70043 1.44532 10.133 1.58642 11.435 2.12569C12.7369 2.66496 13.8496 3.57819 14.6326 4.74989C15.4155 5.92159 15.8333 7.29914 15.8333 8.70833C15.8312 10.5974 15.0799 12.4084 13.7442 13.7441C12.4084 15.0799 10.5974 15.8312 8.70833 15.8333V15.8333Z" fill="#D6AD58"/>
                     <path d="M12.1315 6.14571L7.94038 9.98767L6.10134 8.14862C6.02831 8.07301 5.94095 8.0127 5.84437 7.97121C5.74778 7.92972 5.6439 7.90788 5.53878 7.90697C5.43366 7.90605 5.32942 7.92608 5.23212 7.96589C5.13483 8.00569 5.04644 8.06448 4.97211 8.13881C4.89778 8.21314 4.83899 8.30153 4.79919 8.39883C4.75938 8.49612 4.73935 8.60037 4.74026 8.70548C4.74118 8.8106 4.76302 8.91448 4.80451 9.01107C4.846 9.10766 4.90631 9.19501 4.98192 9.26804L7.35692 11.643C7.50119 11.7873 7.6956 11.8703 7.89959 11.8748C8.10358 11.8792 8.30141 11.8047 8.45179 11.6668L13.2018 7.31262C13.3565 7.17069 13.4486 6.97309 13.4576 6.76331C13.4667 6.55353 13.392 6.34874 13.2501 6.194C13.1082 6.03925 12.9106 5.94723 12.7008 5.93818C12.491 5.92912 12.2862 6.00377 12.1315 6.14571V6.14571Z" fill="#D6AD58"/>
                 </svg>
-                Try now 
+                Try
             </a>
-            <a class="btn btn-back col ms-3" href="/">
-                <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a class="btn btn-back col-xl ms-3 d-flex align-items-center justify-content-center " href="/">
+                <svg class="d-none d-xl-block me-xl-3" width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.5438 8.34633C11.6788 7.50634 12.418 6.14692 12.418 4.61544C12.418 2.07052 10.3775 6.10352e-05 7.86951 6.10352e-05C5.36146 6.10352e-05 3.32101 2.07052 3.32101 4.61544C3.32101 6.14692 4.06013 7.50634 5.19523 8.34633C2.3736 9.44197 0.364502 12.2179 0.364502 15.4616C0.364502 16.8613 1.48674 18.0001 2.86617 18.0001H12.8728C14.2523 18.0001 15.3745 16.8613 15.3745 15.4616C15.3745 12.2179 13.3654 9.44197 10.5438 8.34633ZM4.68557 4.61544C4.68557 2.83401 6.11389 1.38469 7.86951 1.38469C9.62512 1.38469 11.0534 2.83401 11.0534 4.61544C11.0534 6.39688 9.62512 7.84623 7.86951 7.84623C6.11389 7.84623 4.68557 6.39688 4.68557 4.61544ZM12.8728 16.6154H2.86617C2.23917 16.6154 1.72906 16.0978 1.72906 15.4616C1.72906 12.0259 4.48362 9.23079 7.86954 9.23079C11.2555 9.23079 14.01 12.0259 14.01 15.4616C14.01 16.0978 13.4999 16.6154 12.8728 16.6154Z" fill="#FFF"/>
                 </svg>
-                Open account
+            Account
             </a>
-            <a class="col-1 w-fit btn-in p-0 ms-5 d-flex align-items-center justify-content-center" href="/">
+            <a class="col-xl-1 w-fit btn-in p-0 ms-5 d-flex align-items-center justify-content-center" href="/">
                 <img src="assets/img/enter.png" alt="">
             </a>
         </div>
     </div>
-    <div class="container con-w  mt-5 pt-5 ps-4 p-0 position-relative">
-        <div class="d-flex justify-content-between p-0 ">
-            <div class="row d-flex justify-content-start flex-column">
+     
+    <div class="mob">
+        <div class="close"><span>+</span></div>
+        <a class="w-fit logo col-1 p-0 d-flex justify-content-start me-5" href="/">
+            <img src="assets/img/logoblack.png" alt="">
+        </a>
+        <ul class="nav col-xl-5 col-xxl-7 p-0 d-lg-flex flex-column mob-menu">
+            <li class="nav-item"><a class="nav-it" href="/">Main</a></li>
+            <li class="nav-item"><a class="nav-it" href="/">About</a></li>
+            <li class="nav-item"><a class="nav-it" href="/">MT5 Opportunities</a></li>
+        </ul>
+        <a class="btn btn-border col-xl d-flex align-items-center" href="/" style="color: #1a1919;">
+            <svg class=" d-xl-block me-xl-3 me-2" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.70833 0C6.98599 0 5.30232 0.510734 3.87024 1.46762C2.43817 2.4245 1.322 3.78456 0.662886 5.37579C0.00377321 6.96703 -0.168681 8.71799 0.167332 10.4072C0.503345 12.0965 1.33273 13.6482 2.55061 14.866C3.7685 16.0839 5.32017 16.9133 7.00942 17.2493C8.69867 17.5853 10.4496 17.4129 12.0409 16.7538C13.6321 16.0947 14.9922 14.9785 15.949 13.5464C16.9059 12.1143 17.4167 10.4307 17.4167 8.70833C17.4139 6.39957 16.4956 4.18616 14.863 2.55362C13.2305 0.92108 11.0171 0.0027237 8.70833 0V0ZM8.70833 15.8333C7.29914 15.8333 5.9216 15.4154 4.7499 14.6325C3.5782 13.8496 2.66497 12.7369 2.12569 11.4349C1.58642 10.133 1.44532 8.70042 1.72024 7.31831C1.99516 5.9362 2.67375 4.66664 3.6702 3.67019C4.66665 2.67375 5.9362 1.99516 7.31832 1.72024C8.70043 1.44532 10.133 1.58642 11.435 2.12569C12.7369 2.66496 13.8496 3.57819 14.6326 4.74989C15.4155 5.92159 15.8333 7.29914 15.8333 8.70833C15.8312 10.5974 15.0799 12.4084 13.7442 13.7441C12.4084 15.0799 10.5974 15.8312 8.70833 15.8333V15.8333Z" fill="#1a1919"/>
+                <path d="M12.1315 6.14571L7.94038 9.98767L6.10134 8.14862C6.02831 8.07301 5.94095 8.0127 5.84437 7.97121C5.74778 7.92972 5.6439 7.90788 5.53878 7.90697C5.43366 7.90605 5.32942 7.92608 5.23212 7.96589C5.13483 8.00569 5.04644 8.06448 4.97211 8.13881C4.89778 8.21314 4.83899 8.30153 4.79919 8.39883C4.75938 8.49612 4.73935 8.60037 4.74026 8.70548C4.74118 8.8106 4.76302 8.91448 4.80451 9.01107C4.846 9.10766 4.90631 9.19501 4.98192 9.26804L7.35692 11.643C7.50119 11.7873 7.6956 11.8703 7.89959 11.8748C8.10358 11.8792 8.30141 11.8047 8.45179 11.6668L13.2018 7.31262C13.3565 7.17069 13.4486 6.97309 13.4576 6.76331C13.4667 6.55353 13.392 6.34874 13.2501 6.194C13.1082 6.03925 12.9106 5.94723 12.7008 5.93818C12.491 5.92912 12.2862 6.00377 12.1315 6.14571V6.14571Z" fill="#1a1919"/>
+            </svg>
+            Try now
+        </a>
+        <a class="btn btn-back col-xl d-flex align-items-center" href="/" style="color: #1a1919;">
+            <svg class="d-xl-block me-xl-3 me-2" width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5438 8.34633C11.6788 7.50634 12.418 6.14692 12.418 4.61544C12.418 2.07052 10.3775 6.10352e-05 7.86951 6.10352e-05C5.36146 6.10352e-05 3.32101 2.07052 3.32101 4.61544C3.32101 6.14692 4.06013 7.50634 5.19523 8.34633C2.3736 9.44197 0.364502 12.2179 0.364502 15.4616C0.364502 16.8613 1.48674 18.0001 2.86617 18.0001H12.8728C14.2523 18.0001 15.3745 16.8613 15.3745 15.4616C15.3745 12.2179 13.3654 9.44197 10.5438 8.34633ZM4.68557 4.61544C4.68557 2.83401 6.11389 1.38469 7.86951 1.38469C9.62512 1.38469 11.0534 2.83401 11.0534 4.61544C11.0534 6.39688 9.62512 7.84623 7.86951 7.84623C6.11389 7.84623 4.68557 6.39688 4.68557 4.61544ZM12.8728 16.6154H2.86617C2.23917 16.6154 1.72906 16.0978 1.72906 15.4616C1.72906 12.0259 4.48362 9.23079 7.86954 9.23079C11.2555 9.23079 14.01 12.0259 14.01 15.4616C14.01 16.0978 13.4999 16.6154 12.8728 16.6154Z" fill="#1a1919"/>
+            </svg>
+        Open account
+        </a>
+        <!-- <a class="col-xl-1 w-fit btn-in p-0 ms-5 d-flex align-items-center justify-content-center" href="/">
+            <img src="assets/img/enter.png" alt="">
+        </a> -->
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container con-w  mt-5 pt-5 ps-xl-4 p-0 position-relative ">
+        <div class="d-flex justify-content-between flex-column flex-xl-row p-0">
+            <div class="row d-flex justify-content-start flex-column m-0">
                 <h1 class="text-title p-0 mb-4">MetaTrader 5</h1>
                 <div class="opacity-50 p-0 text mb-5">Connect to the popular MT5 platform with Score Priority, available on desktop and mobile. Download with no monthly subscription fees and unlock exclusive access to MetaTrader Market, an online store of trading robots and technical indicators.</div>
                 <a class="btn btn-back btn-back-all w-fit mt-3 mb-5" href="/">Open account</a>
-                <div class="col row d-flex ">
-                    <div class="col w-fit h-fit d-flex flex-column align-items-center card-main me-4">
+                <div class="col row d-flex flex-column flex-xl-row p-0 align-items-center mx-auto">
+                    <div class="col-xl w-fit h-fit d-flex flex-column align-items-center card-main me-xl-4 mb-4 mb-xl-0">
                         <div class="text-card">0$</div>
                         <div class="text opacity-25">commission trading</div>
                     </div>
-                    <div class="col w-fit h-fit d-flex flex-column align-items-center card-main">
+                    <div class="col w-fit h-fit d-flex flex-column align-items-center card-main mb-4 mb-xl-0">
                         <div class="text-card">0$</div>
                         <div class="text opacity-25">commission trading</div>
                     </div>
                 </div>
             </div>
-            <div class="row p-0">
-                <div class="img-bg p-0">
+            <div class="row p-0 m-0 pb-5 mb-5">
+                <div class="img-bg p-0 pb-5">
                     <img src="assets/img/mainimg.png" alt="">
+                    <div class="bg position-absolute"></div>
                 </div>
             </div>
         </div>
-        <div class="bg position-absolute"></div>
     </div>
 
-    <div class="container con-w p-0" style="margin-top: 150px;">
+    <div class="container con-w p-0">
         <div class="title mx-auto p-0 mb-5" style="max-width: 480px;">Cooperating with us is always beneficial</div>
-        <div class="col d-grid justify-content-between row pt-5 list-item" style="column-gap: 25px; row-gap: 25px;">
+        <div class="col d-xl-grid d-lg-flex justify-content-between row pt-5 list-item m-0" style="column-gap: 25px; row-gap: 25px;">
             <div class="row item-card m-0 d-block">
                 <div class="card-img img mb-4 p-0">
                     <img src="assets/img/Devices.png" alt="">
@@ -67,7 +107,7 @@ title: Главная
                 <div class="text-title p-0 mb-4">The terminal that is always with you</div>
                 <div class="text-sub p-0">Invest and trade using a browser, mobile phone, or download with no monthly subscription fee and access the Metatrader store.</div>
             </div>
-            <div class="col item-card d-flex">
+            <div class="col item-card d-xl-flex">
                 <div class="card-img img me-5  p-0">
                     <img src="assets/img/coins.png" alt="">
                 </div>
@@ -76,7 +116,7 @@ title: Главная
                     <div class="text-sub p-0">Invest and trade using a browser, mobile phone, or download with no monthly subscription fee and access the Metatrader store.</div>
                 </div>
             </div>
-            <div class="col item-card d-flex ">
+            <div class="col item-card d-xl-flex ">
                 <div class="card-img img me-5  p-0">
                     <img src="assets/img/percent.png" alt="">
                 </div>
@@ -85,7 +125,7 @@ title: Главная
                     <div class="text-sub p-0">Invest and trade using a browser, mobile phone, or download with no monthly subscription fee and access the Metatrader store.</div>
                 </div>
             </div>
-            <div class="col item-card d-flex">
+            <div class="col item-card flex-column d-flex flex-xl-row">
                 <div class="card-img img me-5 p-0">
                     <img src="assets/img/calculate.png" alt="">
                 </div>
@@ -95,12 +135,12 @@ title: Главная
                 </div>
             </div>
         </div>
-        <a class="btn btn-back btn-back-all d-flex  w-fit mx-auto mt-3 mb-5" href="/">Open account</a>
+        <a class="btn btn-back btn-back-all d-flex align-items-center justify-content-center w-fit mx-auto mt-3 mb-5" href="/">Open account</a>
     </div>
 
     <div class="container con-w p-0 mb-5" style="margin-top: 150px;">
         <div class="title mx-auto p-0 mb-5" style="max-width: 480px;">A few more reasons to work with us</div>
-        <div class="col d-grid justify-content-between row pt-5 list-item" style="column-gap: 25px; row-gap: 25px;">
+        <div class="col d-xl-grid d-lg-flex justify-content-between row pt-5 list-item m-0 p-lg-3" style="column-gap: 25px; row-gap: 25px;">
             <div class="row item-card m-0 d-block">
                 <div class="card-img img mb-4 p-0">
                     <img src="assets/img/cloud.png" alt="">
@@ -108,7 +148,7 @@ title: Главная
                 <div class="text-title p-0 mb-4">Virtual private server</div>
                 <div class="text-sub p-0">With the help of shared hosting, MT5 can work even when the computer is turned off. In just a few clicks, create a virtual copy of your trading platform and launch it on a remote server.</div>
             </div>
-            <div class="col item-card d-flex">
+            <div class="col item-card d-xl-flex">
                 <div class="card-img img me-5  p-0">
                     <img src="assets/img/notebook.png" alt="">
                 </div>
@@ -117,7 +157,7 @@ title: Главная
                     <div class="text-sub p-0">Define your automatic trading using special applications, trading robots and trading advisors​</div>
                 </div>
             </div>
-            <div class="col item-card d-flex ">
+            <div class="col item-card d-xl-flex">
                 <div class="card-img img me-5  p-0">
                     <img src="assets/img/indicators.png" alt="">
                 </div>
@@ -126,7 +166,7 @@ title: Главная
                     <div class="text-sub p-0">Discover fundamental indicators from open sources in the terminal</div>
                 </div>
             </div>
-            <div class="col item-card d-flex">
+            <div class="col item-card flex-column d-flex flex-xl-row">
                 <div class="card-img img me-5 p-0">
                     <img src="assets/img/pc.png" alt="">
                 </div>
@@ -136,18 +176,19 @@ title: Главная
                 </div>
             </div>
         </div>
-        <a class="btn btn-back btn-back-all d-flex  w-fit mx-auto mt-3 mb-5" href="/">Open account</a>
+        <a class="btn btn-back btn-back-all d-flex justify-content-center w-fit mx-auto mt-3 mb-5" href="/">Open account</a>
+    </div>
+    <div class="social-icons mt-4">
+        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.twitch.tv/" target="_blank"><i class="fab fa-twitch"></i></a>
     </div>
 
 
 
 
 
-
-
-    <div class="cont">
-        <div class="back"></div>
-        <div class="front"></div>
-    </div>
 
 </div>

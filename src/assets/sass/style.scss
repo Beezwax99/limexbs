@@ -72,15 +72,7 @@ body {
 
 $enable-cssgrid: true;
 
-.logo{
-    width: 73px;
-    height: 38px;
-    transition: all 0.3s ease;
-    &:hover{
-        transform: scale(1.1);
-    }
-    
-}
+
 h1{
     font-family: 'Montserrat-SemiBold';
     font-size: 48px;
@@ -106,6 +98,21 @@ h1{
 }
 .w-fit{
     width: fit-content;
+    @media screen and(max-width:1200px){
+        width: 100%;
+    }
+}
+.logo{
+    width: 73px;
+    height: 38px;
+    transition: all 0.3s ease;
+    &:hover{
+        transform: scale(1.1);
+    }
+    @media screen and(max-width:1200px) {
+        width: 50px;
+        height: 22px;
+    }
 }
 .h-fit{
     height: fit-content;
@@ -114,6 +121,9 @@ h1{
     max-width: 1620px;
     @media screen and(max-width:1400px) {
         max-width: 1170px   ;
+    }
+    @media screen and(max-width:1200px){
+        overflow:hidden;
     }
 }
 .btn-border{
@@ -124,6 +134,10 @@ h1{
     line-height: 24px;
     color: #D6AD58;
     transition: all 0.3s ease;
+    @media screen and(max-width:1200px){
+        font-size: 16px;
+        line-height: 22px;
+    }
     
     svg path{
         transition: all 0.3s ease;
@@ -145,6 +159,10 @@ h1{
     font-size: 18px;
     line-height: 24px;
     transition: all 0.3s ease;
+    @media screen and(max-width:1200px){
+        font-size: 16px;
+        line-height: 22px;
+    }
     svg path{
         transition: all 0.3s ease;
     }
@@ -194,9 +212,14 @@ h1{
         @media screen and(max-width:1400px){
             font-size: 16px;
             line-height: 22px;
-            max-width: 284px;
+            max-width: 284px;   
             &:last-of-type{
                 max-width: 550px;
+            }
+        }
+        @media screen and(max-width:1200px){
+            &:last-of-type{
+                max-width: unset;
             }
         }
     }
@@ -229,6 +252,14 @@ h1{
         width: 834.97px;
         height: 871.16px;
     }
+    @media screen and(max-width:993px){
+    width: 100%;
+    height: 226%;
+    top: -30%;
+    transform: rotate(111.49deg);
+    // overflow-x: hidden;
+    }
+        
 }
 .title{
     font-family: 'Montserrat-SemiBold', sans-serif;
@@ -271,40 +302,103 @@ h1{
     @media screen and(max-width:1400px){
         height: 215px;
     }
+    @media screen and(max-width:1200px){
+        width: 167px;
+        height: 125px;
+        margin-bottom: 20px;
+    }
 }
 
-
-
-
-
-
-
-
-.cont {
+.burger{
     position: relative;
-    display: flex;
-    width: 300px;
-    .back {
-        width: 300px;
-        display: block;
-        height: 300px;
-        background: url('../img/Devices.png');
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-    .front {
+    cursor: pointer;
+    width: 30px;
+    height: 26px;
+    align-items: center;
+    span, &::before, &::after {
+        content: '';
+        width: 24px;
+        height: 2px;
         position: absolute;
-        top: 0;
         right: 0;
         display: block;
-        width: 300px;
-        height: 300px;
-        background-color: #000;
-        transform: translateX(100%);
+        border-radius: 2px;
+        background: #000;
+        transition: all .2s;
     }
-    &:hover {
-        .front {
-            transform: translateX(80%);
+    span {
+        top: 50%;
+        transform: translateY(-50%);
+        width: 24px;
+    }
+    &::before {
+        top: 6px;
+    }
+    &::after {
+        bottom: 6px;
+    }
+    // @media screen and(min-width:425px){
+    //     width: 50px;
+    // }
+}
+
+.mob{
+    padding: 106px 20px 181px 94px;
+    display: flex;
+    background: #D6AD58;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    overflow: hidden; 
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 1000;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+    transform: translateY(-100%);
+    &.active{
+        visibility: visible;
+        transform: translateY(0);
+    }       
+    .logo{
+        margin-left: unset;
+        // left: 10px;
+        transform: unset;
+        left: unset;
+        top: 80px;
+    }
+    .mob-menu{
+        font-size: 18px;
+        align-items: 24px;
+        margin-bottom: unset;
+        li{
+            margin-right: unset;
+            margin-bottom: 22px;
+            height: unset;
         }
     }
+    .close{
+        position: absolute;
+        top: 17px;
+        right: 17px;
+        font-family: 'Montserrat-Medium', sans-serif;
+        color: #000;
+        font-size: 28px;
+        font-stretch: semi-expanded;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span {
+          transform: rotate(45deg);
+        }
+      }
+}
+
+.no-scroll {
+    overflow: hidden;
 }
